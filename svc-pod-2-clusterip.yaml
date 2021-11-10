@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+name: svc_pod_2
+spec:
+type: ClusterIP
+selector:
+app: segundo_pod
+ports:
+- port: 9000
+targetPort: 80
